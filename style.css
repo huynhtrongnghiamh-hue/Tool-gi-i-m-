@@ -1,0 +1,16 @@
+* { box-sizing: border-box; }
+body { font-family: 'Courier New', monospace; background: #0d1117; color: #58a6ff; margin: 0; padding: 20px; }
+.container { max-width: 1200px; margin: 0 auto; }
+h1 { text-align: center; color: #58a6ff; text-shadow: 0 0 8px rgba(88,166,255,0.4); margin-bottom: 5px; }
+p.subtitle { text-align: center; color: #8b949e; margin-top: 0; margin-bottom: 25px; }
+.box-container { display: flex; gap: 20px; flex-wrap: wrap; }
+.box { flex: 1; min-width: 300px; display: flex; flex-direction: column; }
+textarea { width: 100%; height: 420px; background: #161b22; color: #c9d1d9; border: 1px solid #30363d; border-radius: 6px; padding: 12px; font-family: monospace; resize: vertical; outline: none; }
+textarea:focus { border-color: #58a6ff; }
+.controls { margin: 20px 0; display: flex; justify-content: center; align-items: center; gap: 12px; flex-wrap: wrap; }
+button, label.file-btn { background: #238636; color: #fff; border: none; padding: 10px 20px; font-weight: bold; cursor: pointer; border-radius: 6px; transition: 0.2s; }
+button:hover, label.file-btn:hover { background: #2ea043; }
+.btn-download { background: #1f6feb !important; }
+.btn-download:hover { background: #388bfd !important; }
+input[type="file"] { display: none; }
+.stats { color: #8b949e; text-align: center; margin-top: 10px; font-size: 14px; }
