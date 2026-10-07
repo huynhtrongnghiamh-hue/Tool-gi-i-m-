@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto Lua Deobfuscator Engine</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/luaparse@0.3.1/luaparse.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>AUTOMATED LUA DEOBFUSCATOR</h1>
+        <p class="subtitle">Client-Side Engine - Safe & Fast Analysis</p>
+        
+        <div class="controls">
+            <label class="file-btn">
+                📂 NẠP FILE LUA
+                <input type="file" id="fileInput" accept=".lua,.txt" onchange="loadFile(event)">
+            </label>
+            <button onclick="processCode()">⚡ QUÉT & GIẢI MÃ</button>
+            <button class="btn-download" onclick="downloadResult()">💾 TẢI FILE SẠCH</button>
+        </div>
+
+        <div class="box-container">
+            <div class="box">
+                <h3>MÃ GỐC (OBFUSCATED):</h3>
+                <textarea id="rawCode" placeholder="Dán code Lua đã bị mã hóa vào đây..."></textarea>
+            </div>
+            <div class="box">
+                <h3>MÃ SẠCH (DEOBFUSCATED):</h3>
+                <textarea id="cleanCode" readonly placeholder="Kết quả sau khi quét sẽ hiển thị tại đây..."></textarea>
+            </div>
+        </div>
+        <div class="stats" id="statusText">Trạng thái: Sẵn sàng</div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
